@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+  <div id="header">
+  <div class="container">
+    <nav>
+        <img src="Images/logo2.png" alt="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <h1>Hi,I'm <br>Subha<span>laxmi</span></h1>
+      <h2>Full-Stack Developer</h2>
+    </div>
+  </div>
+  </div> 
+  <!-- --------------about------------ -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="Images/user.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1><br>
+          <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:normal;">"I am a Passionate full-stack developer with a strong foundation in technologies.Proficient in HTML, CSS, JavaScript, Python, AngularJS, MERN Stack and responsive design.Learnt in creating dynamic, user-friendly websites and web applications. Dedicated to solving complex problems and delivering efficient, elegant solutions.Committed to continuous learning and staying up-to-date with the latest industry trends."
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+            <p class="tab-links" onclick="opentab('Certification')">Certification</p>
+            <p class="tab-links" onclick="opentab('Interest')">Interest</p>
+          </div>
+          <div class="tab-contents active-tab" id="Education">
+            <ul>
+              <li><span>MCA</span><br>NIST University</li>
+              <li><span>BSC IN MATHEMATICS</span><br>Berhampur University</li>
+              <li><span>HIGHER SECONDARY</span><br>Berhampur University</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Certification">
+            <ul>
+              <li><span>NPTEL</span><br>BIG DATA</li>
+              <li><span>MCC Academy</span><br>DCA</li>
+              <li><span>Great learning Academy</span><br>AngularJS</li>
+              <li><span>Great learning Academy</span><br>MERN Stack</li>
+              <li><span>Great learning Academy</span><br>Front-end development</li>
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="Interest">
+            <ul>
+              <li><span>PERSONAL</span><br>Dancing, Singing</li>
+              <li><span>PROFESSIONAL</span><br>Content Writing, Team work</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!-- ------------------skill----------- -->
+  <div id="skills">
+  <div class="skills_section">
+    <div class="skills_head">
+        <h2>My <span>Skills</span></h2><br>
+        <p>-Here is my skills to represent my expertise-</p>
+    </div>
+
+    <div class="skills_main">
+        <div class="skill_bar">
+            <div class="info">
+                <p>HTML</p>
+                <P>90%</P>
+            </div>
+            <div class="bar">
+                <span class="html"></span>
+            </div>
+        </div>
+        <div class="skill_bar">
+            <div class="info">
+                <p>CSS</p>
+                <P>85%</P>
+            </div>
+            <div class="bar">
+                <span class="css"></span>
+            </div>
+        </div>
+        <div class="skill_bar">
+            <div class="info">
+                <p>Java</p>
+                <P>80%</P>
+            </div>
+            <div class="bar">
+                <span class="sass"></span>
+            </div>
+        </div>
+        <div class="skill_bar">
+            <div class="info">
+                <p>Java Script</p>
+                <P>80%</P>
+            </div>
+            <div class="bar">
+                <span class="js"></span>
+            </div>
+        </div>
+        <div class="skill_bar">
+            <div class="info">
+                <p>MERN Stack</p>
+                <P>75%</P>
+            </div>
+            <div class="bar">
+                <span class="react"></span>
+            </div>
+        </div>
+        <div class="skill_bar">
+            <div class="info">
+                <p>AngularJS</p>
+                <P>70%</P>
+            </div>
+            <div class="bar">
+                <span class="node"></span>
+            </div>
+        </div>
+        <div class="skill_bar">
+            <div class="info">
+                <p>Python</p>
+                <P>65%</P>
+            </div>
+            <div class="bar">
+                <span class="express"></span>
+            </div>
+        </div>
+        <div class="skill_bar">
+            <div class="info">
+                <p>MySQL</p>
+                <P>60%</P>
+            </div>
+            <div class="bar">
+                <span class="mongo"></span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+  <!-- ---------------portfolio----------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">MY PORTFOLIO</h1>
+      <h2>--my work--</h2>
+      <div class="projectlist">
+        <div class="project">
+          <img src="Images/wrong-way.jpg">
+          <div class="layer">
+            <h3>Wrong-way vehicle detection</h3>
+            <p>A real-time project that detect the wrong-way driving vehicles using deep learning technique.</p>
+            <a href="https://github.com/subha-1/Wrong-way-vehicle-detection.git"><i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="Images/person.jpg">
+          <div class="layer">
+            <h3>Person Counter</h3>
+            <p>A real-time project that counts the number of persons in the frame.</p>
+            <a href="https://github.com/subha-1/Person-Counter"><i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="Images/object.jpg">
+          <div class="layer">
+            <h3>Object detection</h3>
+            <p>A real-time project that detect multiple objects using YOLO.</p>
+            <a href="https://github.com/subha-1/Object-detection.git"><i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div><br><br><br><br><br>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- --------------contact------------------ -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1><br>
+          <i class="fa-solid fa-phone"></i> 9556696030<br><br>
+          <i class="fa-solid fa-location-dot"></i> Berhampur, India<br><br>
+          <i class="fa-solid fa-envelope"></i> subhalaxmiach955@gmail.com
+          <div class="social-icons">
+            <a href="https://github.com/subha-1"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/Sibani_24"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/shy_sirllin_6"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/subha-laxmi"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="Images/My_Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Created by Subhalaxmi|<i class="far fa-copyright"></i>2024 All rights reserved.</i></p>
+    </div>
+  </div>
+
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+</script>
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw9vbSpFQV2jcQ4MzArIx2Kf91snWxbWzM3WW1mLjKUoq1W8iuEx-6sZ6d1v4ge8LkW/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      }
+      )
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
